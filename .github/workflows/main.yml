@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: Hello world action step
-        uses: mitre/xccdf-validate-action@main
+      - name: Validate XCCDF File
+        uses: mitre/xccdf-validate-action@v1
         with: 
           input: sample_data/xccdf-results-openscap-rhel7.xml
