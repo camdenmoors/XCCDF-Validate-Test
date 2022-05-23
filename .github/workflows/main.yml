@@ -7,6 +7,5 @@ jobs:
     steps:
       - name: Hello world action step
         uses: mitre/xccdf-validate-action@main
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+        with: 
+          input: sample_data/xccdf-results-openscap-rhel7.xml
